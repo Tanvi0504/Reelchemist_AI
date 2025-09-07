@@ -1,0 +1,261 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  /* Cinematic Dark Theme */
+  --background: #0a0a0f;
+  --foreground: #f8f9fb;
+  --card: #1a1a24;
+  --card-foreground: #f8f9fb;
+  --popover: #1a1a24;
+  --popover-foreground: #f8f9fb;
+  --primary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --primary-solid: #f59e0b;
+  --primary-foreground: #0a0a0f;
+  --secondary: #2a2a3a;
+  --secondary-foreground: #f8f9fb;
+  --muted: #1e1e2e;
+  --muted-foreground: #a3a3a3;
+  --accent: #3730a3;
+  --accent-foreground: #f8f9fb;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: rgba(248, 249, 251, 0.1);
+  --input: rgba(248, 249, 251, 0.05);
+  --input-background: rgba(248, 249, 251, 0.05);
+  --switch-background: #2a2a3a;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #f59e0b;
+  /* Cinematic Chart Colors */
+  --chart-1: #fbbf24;
+  --chart-2: #8b5cf6;
+  --chart-3: #06b6d4;
+  --chart-4: #10b981;
+  --chart-5: #f43f5e;
+  --radius: 0.75rem;
+  --sidebar: #1a1a24;
+  --sidebar-foreground: #f8f9fb;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #0a0a0f;
+  --sidebar-accent: #2a2a3a;
+  --sidebar-accent-foreground: #f8f9fb;
+  --sidebar-border: rgba(248, 249, 251, 0.1);
+  --sidebar-ring: #f59e0b;
+  
+  /* Custom Cinematic Colors */
+  --gold: #fbbf24;
+  --gold-dark: #f59e0b;
+  --purple: #8b5cf6;
+  --purple-dark: #7c3aed;
+  --cyan: #06b6d4;
+  --cyan-dark: #0891b2;
+  --surface: #1a1a24;
+  --surface-dark: #0f0f18;
+}
+
+.dark {
+  /* Enhanced Dark Mode */
+  --background: #050509;
+  --foreground: #fafafa;
+  --card: #0f0f18;
+  --card-foreground: #fafafa;
+  --popover: #0f0f18;
+  --popover-foreground: #fafafa;
+  --primary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --primary-solid: #fbbf24;
+  --primary-foreground: #050509;
+  --secondary: #1a1a2e;
+  --secondary-foreground: #fafafa;
+  --muted: #131329;
+  --muted-foreground: #9090a0;
+  --accent: #4338ca;
+  --accent-foreground: #fafafa;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(250, 250, 250, 0.08);
+  --input: rgba(250, 250, 250, 0.03);
+  --ring: #fbbf24;
+  --chart-1: #fbbf24;
+  --chart-2: #a855f7;
+  --chart-3: #06b6d4;
+  --chart-4: #10b981;
+  --chart-5: #f43f5e;
+  --sidebar: #0f0f18;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #fbbf24;
+  --sidebar-primary-foreground: #050509;
+  --sidebar-accent: #1a1a2e;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: rgba(250, 250, 250, 0.08);
+  --sidebar-ring: #fbbf24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary-solid);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom Cinematic Colors */
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
+  --color-purple: var(--purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-cyan: var(--cyan);
+  --color-cyan-dark: var(--cyan-dark);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: radial-gradient(ellipse at top, rgba(251, 191, 36, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
+                var(--background);
+  }
+
+  /* Cinematic animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(251, 191, 36, 0.4), 0 0 40px rgba(251, 191, 36, 0.1);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-effect {
+    background: rgba(26, 26, 36, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(248, 249, 251, 0.1);
+  }
+
+  .glow-border {
+    border: 1px solid transparent;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(135deg, rgba(251, 191, 36, 0.3), rgba(139, 92, 246, 0.3)) border-box;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
