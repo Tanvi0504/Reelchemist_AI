@@ -134,8 +134,8 @@ export default function App() {
     if (typeof window !== 'undefined' && window.localStorage) {
       // Auto-configure the provided API keys
       const providedKeys = {
-        ELEVENLABS_API_KEY: 'sk_37acad11c2259d2ee21a27f554c351d89553ff98a3c0da2c',
-        STABILITY_API_KEY: 'sk-nOYbyoWNxFdcFmO0rRb2LEslQ8bLryjVnBdcXGFtzPWz5dTG',
+        ELEVENLABS_API_KEY: '',
+        STABILITY_API_KEY: '',
         GEMINI_API_KEY: 'YOUR_GEMINI_API_KEY_HERE' // Placeholder - user needs to replace
       };
 
@@ -149,7 +149,7 @@ export default function App() {
 
       if (keysSet > 0) {
         toast.success('🔑 API Keys Configured!', { 
-          description: `${keysSet} API key(s) have been automatically configured. Configure Gemini API key for full functionality.` 
+          description: `${keysSet}` 
         });
       }
     }
